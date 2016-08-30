@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/common-util/common-util.iml" filepath="$PROJECT_DIR$/common-util/common-util.iml" />
-      <module fileurl="file://$PROJECT_DIR$/js-test/js-test.iml" filepath="$PROJECT_DIR$/js-test/js-test.iml" />
-      <module fileurl="file://$PROJECT_DIR$/log4j/log4j.iml" filepath="$PROJECT_DIR$/log4j/log4j.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test-maven-manager.iml" filepath="$PROJECT_DIR$/test-maven-manager.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-dao/user-dao.iml" filepath="$PROJECT_DIR$/user-dao/user-dao.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-service/user-service.iml" filepath="$PROJECT_DIR$/user-service/user-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/user-web/user-web.iml" filepath="$PROJECT_DIR$/user-web/user-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/TestMaven.iml" filepath="$PROJECT_DIR$/.idea/TestMaven.iml" />
     </modules>
   </component>
 </project>
