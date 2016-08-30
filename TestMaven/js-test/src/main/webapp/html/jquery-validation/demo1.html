@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery表单校验</title>
+
+    <style>
+        .form1-class {
+            text-align: center;
+            padding: 10px 10px;
+        }
+        .form1-class input {
+            margin-top: 5px;
+        }
+    </style>
+    <script type="text/javascript" src="../../javascript/jquery/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="../../javascript/jquery-validation-1.14.0/dist/jquery.validate.js"></script>
+    <script type="text/javascript" src="../../javascript/jquery-validation-1.14.0/dist/localization/messages_zh.js"></script>
+    <script>
+        $.validator.setDefaults({
+            submitHandler: function () {
+                alert("提交事件!");
+            }
+        });
+        $(document).ready(function () {
+            $("#commentForm").validate();
+        });
+    </script>
+</head>
+<body>
+
+<div class="form1-class">
+    <form id="commentForm" action="http://einv.com:9090/kaiju/test">
+        姓名：<input type="text" id="name" name="name"> <br>
+        邮箱：<input type="text" id="yx" name="yx"> <br>
+        密码：<input type="password" id="password" name="password"> <br>
+        确认密码：<input type="password" id="qrpassword" name="qrpassword"> <br>
+        <input type="submit" value="提交">
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>正则测试</title>
+    <script type="text/javascript" src="../javascript/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        //js
+        $(function () {
+
+            test1();
+
+        });
+
+
+        /**
+         * 需求
+         * 网站项目中的
+         * http://e-inv.cn/upload/rhweb/20160519/1463617111768098917.jpg路径找不到图片
+         * 需要换成
+         * http://www.e-inv.cn/upload/rhweb/20160519/1463617111768098917.jpg路径
+         * @type {string}
+         */
+        function test1 () {
+            var url = 'http://e-inv.cn/upload/rhweb/20160519/1463617111768098917.jpg';
+            url = url.replace(/^http:\/\/(e-inv)\.cn\//i,"http://www.$1.cn/");
+            console.log(url);
+        }
+
+    </script>
+</head>
+<body>
+<h1>model</h1>
+</body>
+</html> 

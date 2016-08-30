@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>model</title>
+    <script type="text/javascript" src="../javascript/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        //js
+        onload = function () {
+
+            var obj = {
+                a: 1,
+                b: 2,
+                c: 3,
+                d: 4,
+                e: 5,
+                f: null,
+                g: '',
+                fun: function () {
+                    alert('1');
+                },
+                arr : [1,2,3]
+            };
+            clearProperty(obj);
+            console.log(obj);
+            debugger;
+
+        }
+        /**
+         * 过滤，只要字符串和Number字段
+         * @param obj
+         * @returns {*}
+         * wangzz
+         */
+        function clearProperty(obj) {
+            if (!obj) {
+                return obj;
+            }
+            Object.getOwnPropertyNames(obj).forEach(function (key, keyIndex, keys) {
+                var _value = obj[key];
+                var typeOf = Object.prototype.toString.call(_value);
+                if (_value && (typeOf=='[object String]' || typeOf =='[object Number]')) {
+                    //非空的时候处理
+                } else {
+                    delete obj[key];
+                }
+            });
+            return obj;
+        }
+
+    </script>
+</head>
+<body>
+<h1>model</h1>
+</body>
+</html> 

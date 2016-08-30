@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>model</title>
+    <script type="text/javascript" src="../javascript/jquery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		//js
+        function radioTest(){
+
+            /**jquery获取单选框值的集中方式
+             1、$('input:radio:checked').val()；
+             2、$("input[type='radio']:checked").val();
+             3、$("input[name='sex']:checked").val();
+             */
+
+            var val = $(".radio1:checked").val();
+            //var val1 = $('input:radio:checked').val();
+            //var val2 = $('input:radio:checked').val();
+            //var val3 = $('input:radio:checked').val();
+
+            console.log("val="+val);
+            //console.log("val1="+val1);
+            //console.log("val2="+val2);
+            //console.log("val3="+val3);
+
+            //alert("您选择的是："+val);
+        }
+
+	</script>
+</head>
+<body>
+    <h1>input-radio-test</h1>
+
+    1.请选择性别<br>
+    男：<input class="radio1" name="sex" value="男" type="radio">
+    女：<input class="radio1" name="sex" value="女" type="radio">
+    保密：<input class="radio1" name="sex" value="保密" type="radio">
+    <button type="button" onclick="radioTest()">redioTest</button>
+    <button type="button" onclick="radioTest()">redioTest</button>
+    <br>
+
+</body>
+</html> 
