@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>js-for</title>
+    <script type="text/javascript" src="../javascript/jquery/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript">
+		//js
+        var obj = {id:'X001',name:'小明',age:18};
+        var obj2 = {id:'X002',name:'小红',age:19};
+        var obj3 = {id:'X003',name:'小刚',age:18};
+        var users = new Array();
+        users.push(obj);
+        users.push(obj2);
+        users.push(obj3);
+        for(var i in users){
+            console.log(users[i]);
+        }
+	</script>
+</head>
+<body>
+    <h1>model</h1>
+</body>
+</html> 
