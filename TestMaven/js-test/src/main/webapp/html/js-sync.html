@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>model</title>
+    <script type="text/javascript" src="../javascript/jquery/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript">
+        //js - 异步同步问题
+
+        onload=function(){
+            var temp = synchronize();
+            console.log(1);
+            console.log(1);
+            //经验证，js默认是同步执行的
+            alert(temp)
+
+        }
+
+        function synchronize() {
+            for (var i = 0; i < 1000000; i++) {
+                if(i%100==0){
+                    console.log(i);
+                }
+            }
+            return 1000;
+        }
+
+    </script>
+</head>
+<body>
+<h1>model</h1>
+</body>
+</html> 
