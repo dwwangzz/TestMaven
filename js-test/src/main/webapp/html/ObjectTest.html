@@ -21,6 +21,7 @@
                 },
                 arr : [1,2,3]
             };
+
             clearProperty(obj);
             console.log(obj);
             debugger;
@@ -39,6 +40,7 @@
             Object.getOwnPropertyNames(obj).forEach(function (key, keyIndex, keys) {
                 var _value = obj[key];
                 var typeOf = Object.prototype.toString.call(_value);
+                console.log(_value);
                 if (_value && (typeOf=='[object String]' || typeOf =='[object Number]')) {
                     //非空的时候处理
                 } else {
